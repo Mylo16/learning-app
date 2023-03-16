@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn It</title>
+    <title>About</title>
     <script src="https://kit.fontawesome.com/61d7e584a6.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
@@ -19,7 +19,7 @@
                 </svg>
             <ul id="menu-list">
                 <li class="list"><a href="/index.html">Home</a></li>
-                <li class="list"><a href="/about.html">About</a></li>
+                <li class="list"><a href="#about">About</a></li>
                 <li class="list"><a href="#program">Program</a></li>
                 <li class="list"><a href="#about">Join</a></li>
                 <li class="list"><a href="#about">Sponsor</a></li>
@@ -42,11 +42,11 @@
                 </div>
                 <div id="nav-bar">
                     <div class="nav-bar-container">
-                        <div id="top-logo">
+                        <a id="top-logo" href="/index.html">
                             <img src="/assets/logo.png" alt="logo" id="desktop-logo">
-                        </div>
+                        </a>
                         <ul id="nav-lists">
-                            <li class="nav-list"><a href="/about.html">About</a></li>
+                            <li class="nav-list"><a href="/about.html" class="active-about">About</a></li>
                             <li class="nav-list"><a href="#program">Program</a></li>
                             <li class="nav-list"><a href="#about">Join</a></li>
                             <li class="nav-list"><a href="#about">Sponsor</a></li>
@@ -62,55 +62,47 @@
         <div class="headline-container">
             <div class="text-container">
                 <h2 class="welcome">"Welcome"</h2>
-                <div class="main-header">
-                    <h1 class="h1_1">Learn It...</h1>
-                    <h1 class="h1_2">Solve It...</h1>
+                <h1 class="h1_1">Learn It...</h1>
+                <h1 class="h1_2">Solve It...</h1>
+                <p class="description">An educative learning app for both students and teachers. This app Contains slides and questions on general knowledge as well as engineering.
+                    Meet our best lecturers who will facilitate most of the courses once in a week. This program is free and accessible for all.
+                </p>
+                <div class="contact-container">
+                    <p class="contact">Please contact us per Email for any further questions</p>
+                    <p class="contact">about Learn It....Solve It!</p>
+                    <a class="contact link" href="#link">ericopokuantwi384@gmail.com</a>
                 </div>
-                <p class="description">An educative learning app for both students and teachers. This app Contains slides and questions on general knowledge as well as engineering</p>
-                <p class="quote">"Failure is an option here. If things are not failing, you are not innovating enough."</p>
-                <p class="elon">(Elon Musk)</p>
             </div>
         </div>
     </section>
-    <section id="courses">
-        <div class="courses-main-container">
-            <div class="courses-container">
-                <h2 class="courses-header">Courses</h2>
-                <div class="course-row">
-                    <div id="course">
-                        <div class="col-1"><img class="course-img" src="/assets/calculating.png" alt="math"></div>
-                        <div class="col-2"><p class="c2-text">Mathematics</p></div>
-                        <div class="col-3"><p class="c3-text">Learn basic and engineering mathematics-solve trivial questions in addition</p></div>
-                    </div>
-                    <div id="course">
-                        <div class="col-1"><img class="course-img" src="/assets/eng.png" alt="math"></div>
-                        <div class="col-2"><p class="c2-text">English</p></div>
-                        <div class="col-3"><p class="c3-text">Learn basic and engineering mathematics-solve trivial questions in addition</p></div>
-                    </div>
-                    <div id="course">
-                        <div class="col-1"><img class="course-img" src="/assets/piston.png" alt="math"></div>
-                        <div class="col-2"><p class="c2-text">Mechanical Engineering</p></div>
-                        <div class="col-3"><p class="c3-text">Learn basic and engineering mathematics-solve trivial questions in addition</p></div>
-                    </div>
-                    <div id="course">
-                        <div class="col-1"><img class="course-img" src="/assets/electrical.png" alt="math"></div>
-                        <div class="col-2"><p class="c2-text">Electrical Engineering</p></div>
-                        <div class="col-3"><p class="c3-text">Learn basic and engineering mathematics-solve trivial questions in addition</p></div>
-                    </div>
-                </div>
-                <button type="button" class="course-btn">Join the Community Now</button>
-                <a href="#link" class="whole-program">See the whole program</a>
+    <section id="about-logo">
+        <div class="about-logo-container">
+            <div id="about-logo-head">
+                <h2 class="about-logo-header">Learn It.... Solve It</h2>
+                <h2 class="about-logo-header">Logo</h2>
+            </div>
+            <p class="logo-text">Through the logo contest, which was held from June 8th to July 7th, the winning design was determined through online voting and evaluation by judges.
+                The logo of CC Global Summit 2015 optimized for use on the homepage and promotional materials after consultation with the winning designer is as follows.</p>
+            <div class="logo">
+                <img class="logo-img" src="/assets/logo.png" alt="logo">
             </div>
         </div>
     </section>
-    <section id="features">
-        <h2 class="features-header">Featured Lecturers</h2>
-        <div id="feature-container">
-            <div id="feature-col1">
-
+    <section id="history">
+        <h2 class="history-header">See the past Lecture Videos</h2>
+        <p class="history-sub-header">Take a look at the last two lectures</p>
+        <div class="card">
+            <div class="card1">
+                <div class="card-cover">
+                    <p class="see">See</p>
+                    <p class="see">13th March 2023</p>
+                </div>
             </div>
-            <div id="feature-col2">
-
+            <div class="card2">
+                <div class="card-cover">
+                    <p class="see">See</p>
+                    <p class="see">12th March 2023</p>
+                </div>
             </div>
         </div>
     </section>
