@@ -77,7 +77,8 @@ If you like this project show your support by giving a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the entire microverse staff and students for such a wonderful coding camp
+I would like to thank Cindy Shin. The idea behind this project design was extracted from her design on 2015 CC global summit at beehance
+Secondly, would like to thank the entire microverse staff and students for such a wonderful coding camp
 
 ## 📝 License <a name="license"></a>
 
