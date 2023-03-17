@@ -53,9 +53,9 @@ Clone this repository to your desired folder:
 
 -git@github.com:Mylo16/Learning-app.git
 
-### Deployment
+### Live Demo
 
--git@github.com:Mylo16/Mylo16.github.io
+-https://mylo16.github.io/
 
 
 ## 👥 Author <a name="authors"></a>
