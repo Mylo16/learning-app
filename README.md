@@ -16,20 +16,21 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [My-Portfolio] <a name="about-project"></a>
+# 📖 [Learn It] <a name="about-project"></a>
 
-**[My-Portfolio]** is a portfolio header section project with debugging tools that help in proper coding practices. It also comes with a proper design
+**[Learn It]** is a an online educative website that provides slides, videos, questions and answers to users. We also host a weekly class with one of our best Lecturers.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-HTML, CSS and linter files
+HTML, CSS, Javascript and linter files
 
 ### Key Features <a name="key-features"></a>
 
 - **[linter files(debugging tools)]**
 - **[ html and css template]**
+- **[ Javasript]**
 
 
 
@@ -50,11 +51,11 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
--git@github.com:Mylo16/My-Portfolio.git
+-git@github.com:Mylo16/Learning-app.git
 
 ### Deployment
 
-N/A
+-git@github.com:Mylo16/Mylo16.github.io
 
 
 ## 👥 Author <a name="authors"></a>
@@ -64,7 +65,7 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- In the near future I will be adding the other sections like footer, achievements, etc
+- In the near future I will be adding the other sections like questions, videos, slides etc
 
 ## 🤝 Contributing <a name="contributing"></a>
 
