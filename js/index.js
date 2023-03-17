@@ -1,4 +1,4 @@
-import Data from "./featureData.js";
+import Data from './featureData.js';
 
 const { featureData } = Data;
 const features = document.getElementById('features');
@@ -9,31 +9,18 @@ const body = document.getElementById('body');
 const featureCol1 = document.getElementById('feature-col1');
 const featureCol2 = document.getElementById('feature-col2');
 
-
 hamburger.addEventListener('click', () => {
-    popupMenu.style.left = '0';
-    body.style.position = 'fixed';
-})
+  popupMenu.style.left = '0';
+  body.style.position = 'fixed';
+});
 
 closeButton.addEventListener('click', () => {
-    popupMenu.style.left = '-110%';
-    body.style.position = 'static';
-})
-
-for(let i = 0; i<3; i++) {
-  featureCol1.innerHTML += renderFeatures(featureData[i]);
-}
-
-for(let k= 3; k<6; k++) {
-  featureCol2.innerHTML += renderFeatures(featureData[k]);
-}
-
-// featureData.forEach((data) => {
-//     features.innerHTML += renderFeatures(data);
-// });
+  popupMenu.style.left = '-110%';
+  body.style.position = 'static';
+});
 
 function renderFeatures(data) {
-    return `
+  return `
     <div class="lecturer">
         <div class="lecturer-col1"><img src="${data.image.img_src}" alt="${data.image.img_alt}"></div>
         <div class="lecturer-col2">
@@ -45,6 +32,14 @@ function renderFeatures(data) {
         </div>
     </div>
     `;
+}
+
+for (let i = 0; i < 3; i += 1) {
+  featureCol1.innerHTML += renderFeatures(featureData[i]);
+}
+
+for (let k = 3; k < 6; k += 1) {
+  featureCol2.innerHTML += renderFeatures(featureData[k]);
 }
 
 function myFunction(pageWidth) {
@@ -63,10 +58,10 @@ function myFunction(pageWidth) {
     featureCol2.children[0].classList.toggle('inactive');
     featureCol2.children[1].classList.toggle('inactive');
     featureCol2.children[2].classList.toggle('inactive');
-  };
+  }
 }
 
-var pageWidth = window.matchMedia("(max-width: 768px)");
+const pageWidth = window.matchMedia('(max-width: 768px)');
 myFunction(pageWidth);
 pageWidth.addListener(myFunction);
 
@@ -78,4 +73,3 @@ showMore.addEventListener('click', () => {
   featureCol2.children[2].classList.toggle('inactive');
   features.children[2].style.display = 'none';
 });
-
