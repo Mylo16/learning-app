@@ -63,7 +63,7 @@ function myFunction(pageWidth) {
 
 const pageWidth = window.matchMedia('(max-width: 768px)');
 myFunction(pageWidth);
-pageWidth.addListener(myFunction);
+pageWidth.addEventListener('onload', myFunction);
 
 const showMore = document.querySelector('.show-more');
 showMore.addEventListener('click', () => {

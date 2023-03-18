@@ -290,7 +290,7 @@ nav {
 .sponsors1 {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: fit-content;
   margin: 0 auto 1em auto;
   gap: 1em;
 }
@@ -298,7 +298,7 @@ nav {
 .sponsors2 {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: fit-content;
   gap: 6em;
   margin: auto;
 }
@@ -326,6 +326,40 @@ nav {
 
 .logo-text {
   display: none;
+}
+
+.desktop-partner {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    margin-top: 4em;
+  }
+
+  .logo-img {
+    width: 7em;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1,
+  .card2 {
+    width: 60%;
+    background-size: cover;
+  }
+
+  .card-cover {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -372,7 +406,7 @@ nav {
 
   .top-bar-list a {
     color: white;
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 
   .active-about {
@@ -388,7 +422,7 @@ nav {
   }
 
   #desktop-logo {
-    width: 2em;
+    width: 3em;
   }
 
   #nav-lists {
@@ -402,7 +436,7 @@ nav {
   }
 
   .nav-list a {
-    font-size: 0.7em;
+    font-size: 1em;
     color: var(--footer);
   }
 
@@ -423,7 +457,7 @@ nav {
     background-image: url('https://summit.cckorea.org/images/base/main_big.png');
     background-size: cover;
     background-position: 0% -3em;
-    height: 140vh;
+    height: 90vh;
   }
 
   .text-container {
@@ -432,9 +466,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: -2em;
-    width: 60%;
+    width: 70%;
     margin: auto;
+    top: 3em;
   }
 
   .welcome {
@@ -447,22 +481,16 @@ nav {
     align-items: center;
   }
 
-  .h1_1 {
-    position: relative;
-    top: -0.2em;
-    font-size: 2.5em;
-    font-weight: 900;
-  }
-
+  .h1_1,
   .h1_2 {
     position: relative;
-    top: -0.6em;
-    font-size: 2.5em;
+    top: -0.2em;
+    font-size: 3em;
     font-weight: 900;
   }
 
   .description {
-    font-size: 0.7em;
+    font-size: 0.8em;
     width: 70%;
     padding: 0.8em;
     line-height: 1.5em;
@@ -470,8 +498,12 @@ nav {
     background-color: white;
   }
 
+  .contact-container {
+    margin-top: 4em;
+  }
+
   .contact {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   .link {
@@ -488,7 +520,7 @@ nav {
 
   .about-logo-header {
     color: var(--footer);
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .logo-img {
@@ -512,7 +544,7 @@ nav {
     display: block;
     top: -2.5em;
     line-height: 1.5em;
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-align: center;
     color: var(--footer);
     margin-bottom: 1em;
@@ -529,16 +561,17 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    gap: 1em;
     flex-direction: row;
   }
 
   .history-header {
     color: var(--footer);
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .history-sub-header {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--footer);
   }
 
@@ -548,8 +581,8 @@ nav {
 
   .card1,
   .card2 {
-    width: 49%;
-    height: 10em;
+    width: 55%;
+    height: 15em;
     background-size: cover;
     position: relative;
   }
@@ -567,66 +600,236 @@ nav {
   /***** Partner *****/
 
   .sponsors {
-    flex-direction: row;
-    align-items: center;
-    width: 70%;
-    display: flex;
-    margin: auto;
-    position: relative;
+    display: none;
   }
 
-  .sponsors1 {
-    margin: 0;
-    width: 60%;
-  }
-
-  .sponsors2 {
-    gap: 1em;
-    width: 40%;
-  }
-
-  .partners-header {
-    font-size: 1em;
-    color: var(--primary);
-  }
-
-  .partners-header::after {
-    left: 48%;
+  #partners {
+    display: none;
   }
 
   /***** footer *****/
 
   #footer {
-    background-color: var(--primary);
+    background-color: var(--footer);
     padding: 1em 4em;
     justify-content: center;
   }
 
   .logo2 {
-    width: 30%;
+    width: 40%;
+  }
+
+  .copyright-text {
+    color: var(--primary);
+    font-size: 1.2em;
+  }
+
+  @media screen and (min-width: 1035px) {
+    .partners-header::after {
+      left: 48%;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 770px) {
     #headline {
-      height: 50vh;
+      height: 70vh;
     }
 
     #courses {
-      height: 40vh;
+      height: 50vh;
     }
 
     .courses-container {
       height: 40vh;
     }
-
-    .whole-program {
-      width: 30%;
-    }
   }
 
   @media screen and (min-width: 801px) and (max-width: 822px) {
     #headline {
-      height: 70vh;
+      height: 80vh;
+    }
+  }
+
+  @media screen and (min-width: 823px) {
+    #headline {
+      height: 90vh;
+    }
+
+    .description {
+      font-size: 1em;
+    }
+
+    .contact {
+      font-size: 1em;
+    }
+
+    #about-logo-head {
+      font-size: 1.5em;
+    }
+
+    .logo-text {
+      font-size: 1em;
+    }
+
+    .history-header {
+      font-size: 1.5em;
+    }
+
+    .history-sub-header {
+      font-size: 1em;
+    }
+
+    .card1,
+    .card2 {
+      height: 40vh;
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    /***** Navigation *****/
+
+    #top-bar {
+      background-color: var(--footer);
+      width: 100%;
+      height: 2.5em;
+      display: flex;
+      align-items: center;
+    }
+
+    .handle1 {
+      width: 10px;
+      position: relative;
+    }
+
+    .handle2 {
+      width: 15px;
+      position: relative;
+    }
+
+    .top-bar-lists {
+      display: flex;
+      gap: 1em;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      bottom: 0;
+      width: 80%;
+      margin: auto;
+    }
+
+    .top-bar-list a {
+      color: white;
+      font-size: 0.9em;
+    }
+
+    .nav-bar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+    }
+
+    #desktop-logo {
+      width: 4em;
+    }
+
+    #nav-lists {
+      display: flex;
+      gap: 4em;
+    }
+
+    .nav-list a {
+      font-size: 1.2em;
+      transition: 0.5s;
+      color: var(--footer);
+    }
+
+    /***** Desktop Headline Section *****/
+
+    #headline {
+      width: 100%;
+      background-image: url('https://summit.cckorea.org/images/base/main_big.png');
+      background-size: cover;
+      background-position: 0% 3em;
+      height: 100vh;
+    }
+
+    .text-container {
+      position: relative;
+      width: 70%;
+      top: 5em;
+    }
+
+    .welcome {
+      margin-bottom: 0;
+      font-size: 2.5em;
+    }
+
+    .main-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .h1_1,
+    .h1_2 {
+      position: relative;
+      top: -0.2em;
+      font-size: 5em;
+      font-weight: 900;
+    }
+
+    .description {
+      font-size: 1.2em;
+      width: 60%;
+      border: 4px solid white;
+      background-color: #f7f3f3;
+    }
+
+    .contact {
+      font-size: 1em;
+    }
+
+    #about-logo {
+      height: 65vh;
+    }
+
+    #about-logo-head {
+      font-size: 2em;
+    }
+
+    .logo-text {
+      font-size: 1em;
+    }
+
+    .logo {
+      padding: 3em;
+    }
+
+    .logo-img {
+      width: 15em;
+    }
+
+    .desktop-partner {
+      display: flex;
+      gap: 3em;
+    }
+
+    .history-header {
+      font-size: 1.5em;
+    }
+
+    .history-sub-header {
+      font-size: 1.2em;
+    }
+
+    .card1,
+    .card2 {
+      height: 50vh;
+    }
+
+    .card-cover {
+      font-size: 2em;
     }
   }
 }

@@ -141,7 +141,7 @@ nav {
 /***** Courses *****/
 
 #courses {
-  height: 120vh;
+  height: 110vh;
   background-image: url('	https://summit.cckorea.org/images/base/pattern_bg.png');
   position: relative;
 }
@@ -246,6 +246,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  margin-bottom: 3em;
 }
 
 .features-header {
@@ -380,15 +381,19 @@ nav {
 .sponsors1 {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: fit-content;
   margin: 0 auto 1em auto;
   gap: 1em;
+}
+
+.desktop-partner {
+  display: none;
 }
 
 .sponsors2 {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: fit-content;
   gap: 6em;
   margin: auto;
 }
@@ -453,12 +458,13 @@ nav {
     padding: 0.1em;
     position: relative;
     bottom: 0.2em;
-    margin-right: 5em;
+    width: 80%;
+    margin: auto;
   }
 
   .top-bar-list a {
     color: white;
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 
   .nav-bar-container {
@@ -470,7 +476,7 @@ nav {
   }
 
   #desktop-logo {
-    width: 2em;
+    width: 3em;
   }
 
   #nav-lists {
@@ -480,11 +486,12 @@ nav {
 
   .campaign {
     padding: 0 0.2em;
+    display: flex;
     border: 2px solid var(--header);
   }
 
   .nav-list a {
-    font-size: 0.7em;
+    font-size: 1em;
     transition: 0.5s;
     color: var(--footer);
   }
@@ -510,14 +517,13 @@ nav {
     background-image: url('https://summit.cckorea.org/images/base/main_big.png');
     background-size: cover;
     background-position: 0% 3em;
-    height: 110vh;
+    height: 90vh;
   }
 
   .text-container {
     position: relative;
-    top: -2em;
-    width: 60%;
-    margin: auto;
+    width: 70%;
+    top: 2em;
   }
 
   .welcome {
@@ -530,22 +536,16 @@ nav {
     align-items: center;
   }
 
-  .h1_1 {
-    position: relative;
-    top: -0.2em;
-    font-size: 2.5em;
-    font-weight: 900;
-  }
-
+  .h1_1,
   .h1_2 {
     position: relative;
     top: -0.2em;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 900;
   }
 
   .description {
-    font-size: 0.6em;
+    font-size: 0.8em;
     width: 70%;
     border: 2px solid white;
     background-color: #f7f3f3;
@@ -555,21 +555,23 @@ nav {
 
   #courses {
     background-size: 3%;
-    height: 85vh;
+    height: 60vh;
   }
 
   .courses-container {
     background-color: #272a31c6;
-    height: 85vh;
+    height: 60vh;
   }
 
   .courses-header {
-    font-size: 1em;
+    font-size: 1.5em;
+    margin: 0 auto 0 auto;
+    text-align: center;
   }
 
   .course-row {
-    width: 70%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: row;
     gap: 0.2em;
@@ -593,13 +595,13 @@ nav {
   }
 
   .c2-text {
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-align: center;
   }
 
   .c3-text {
     text-align: center;
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   .course-btn {
@@ -611,7 +613,8 @@ nav {
     color: white;
     transition: 0.5s;
     display: block;
-    width: 20%;
+    width: 50%;
+    text-align: center;
     margin: 1em auto 4em auto;
   }
 
@@ -629,15 +632,16 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    height: 80vh;
   }
 
   #feature-col1,
   #feature-col2 {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
   }
 
   .lecturer {
@@ -648,17 +652,17 @@ nav {
   .lecturer-name {
     font-weight: bold;
     color: black;
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   .lecturer-position {
     color: var(--header);
-    font-size: 0.6em;
+    font-size: 0.9em;
     position: relative;
   }
 
   .lecturer-work {
-    font-size: 0.6em;
+    font-size: 0.9em;
   }
 
   .show-more {
@@ -668,31 +672,22 @@ nav {
   /***** Partner *****/
 
   .sponsors {
-    flex-direction: row;
-    align-items: center;
-    width: 70%;
-    display: flex;
+    display: none;
+  }
+
+  .desktop-partner {
+    width: fit-content;
     margin: auto;
-    position: relative;
-  }
-
-  .sponsors1 {
-    margin: 0;
-    width: 60%;
-  }
-
-  .sponsors2 {
-    gap: 1em;
-    width: 40%;
+    display: block;
   }
 
   .partners-header {
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--primary);
   }
 
   .partners-header::after {
-    left: 48%;
+    left: 47%;
   }
 
   /***** footer *****/
@@ -706,42 +701,225 @@ nav {
   .logo2 {
     width: 30%;
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 770px) {
-    #headline {
-      height: 50vh;
-    }
-
-    #courses {
-      height: 40vh;
-    }
-
-    .courses-container {
-      height: 40vh;
-    }
-
-    .whole-program {
-      width: 30%;
-      text-align: center;
-    }
+@media screen and (min-width: 768px) and (max-width: 770px) {
+  #headline {
+    height: 70vh;
   }
 
-  @media screen and (min-width: 801px) and (max-width: 822px) {
-    #headline {
-      height: 50vh;
-    }
+  #courses {
+    height: 50vh;
+  }
 
-    #courses {
-      height: 40vh;
-    }
+  .courses-container {
+    height: 40vh;
+  }
 
-    .courses-container {
-      height: 40vh;
-    }
+  .whole-program {
+    width: 30%;
+    text-align: center;
+  }
+}
 
-    .whole-program {
-      width: 30%;
-      text-align: center;
-    }
+@media screen and (min-width: 801px) and (max-width: 822px) {
+  #headline {
+    height: 70vh;
+  }
+
+  #courses {
+    height: 50vh;
+  }
+
+  .courses-container {
+    height: 40vh;
+  }
+
+  .whole-program {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1035px) {
+  #feature-col1,
+  #feature-col2 {
+    gap: 5em;
+  }
+
+  #feature-container {
+    height: 70vh;
+  }
+
+  .partners-header::after {
+    left: 48%;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1350px) {
+  #features {
+    height: 90vh;
+  }
+
+  #feature-col1,
+  #feature-col2 {
+    gap: 7em;
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  /***** Navigation *****/
+
+  #top-bar {
+    background-color: var(--footer);
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  .handle1 {
+    width: 10px;
+    position: relative;
+  }
+
+  .handle2 {
+    width: 15px;
+    position: relative;
+  }
+
+  .top-bar-lists {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    margin: auto;
+  }
+
+  .top-bar-list a {
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #desktop-logo {
+    width: 4em;
+  }
+
+  #nav-lists {
+    display: flex;
+    gap: 4em;
+  }
+
+  .nav-list a {
+    font-size: 1.2em;
+    transition: 0.5s;
+    color: var(--footer);
+  }
+
+  /***** Desktop Headline Section *****/
+
+  #headline {
+    width: 100%;
+    background-image: url('https://summit.cckorea.org/images/base/main_big.png');
+    background-size: cover;
+    background-position: 0% 3em;
+    height: 100vh;
+  }
+
+  .text-container {
+    position: relative;
+    width: 70%;
+    top: 8em;
+  }
+
+  .welcome {
+    margin-bottom: 0;
+    font-size: 2.5em;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .h1_1,
+  .h1_2 {
+    position: relative;
+    top: -0.2em;
+    font-size: 5em;
+    font-weight: 900;
+  }
+
+  .description {
+    font-size: 1.2em;
+    width: 60%;
+    border: 4px solid white;
+    background-color: #f7f3f3;
+  }
+
+  .quote {
+    font-size: 1.2em;
+  }
+
+  #features {
+    height: 100vh;
+  }
+
+  #feature-col1,
+  #feature-col2 {
+    gap: 7em;
+  }
+
+  .desktop-partner {
+    display: flex;
+    gap: 3em;
+  }
+
+  .course-row {
+    width: 80%;
+  }
+
+  .course-img {
+    width: 5em;
+  }
+
+  .c2-text {
+    font-size: 1em;
+  }
+
+  .c3-text {
+    font-size: 1em;
+  }
+
+  .whole-program {
+    font-size: 1.5em;
+    width: 22%;
+  }
+
+  .lecturer-name {
+    font-size: 1.2em;
+  }
+
+  .lecturer-position {
+    font-size: 1em;
+  }
+
+  .lecturer-work {
+    font-size: 1em;
+  }
+
+  #feature-container {
+    gap: 5em;
   }
 }
