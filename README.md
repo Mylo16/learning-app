@@ -78,6 +78,8 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
+Here is the link to the issue page: https://github.com/Mylo16/learning-app/issues
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
