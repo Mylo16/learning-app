@@ -394,7 +394,6 @@ nav {
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 6em;
   margin: auto;
 }
 
@@ -517,7 +516,7 @@ nav {
     background-image: url('https://summit.cckorea.org/images/base/main_big.png');
     background-size: cover;
     background-position: 0% 3em;
-    height: 90vh;
+    height: 100vh;
   }
 
   .text-container {
@@ -555,12 +554,13 @@ nav {
 
   #courses {
     background-size: 3%;
-    height: 60vh;
+    height: 80vh;
+    margin-bottom: 3em;
   }
 
   .courses-container {
     background-color: #272a31c6;
-    height: 60vh;
+    height: 80vh;
   }
 
   .courses-header {
@@ -580,6 +580,7 @@ nav {
   #course {
     flex-direction: column;
     align-items: center;
+    height: 30vh;
     justify-content: center;
     padding: 1em 0;
   }
@@ -595,13 +596,13 @@ nav {
   }
 
   .c2-text {
-    font-size: 0.8em;
+    font-size: 1.4em;
     text-align: center;
   }
 
   .c3-text {
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .course-btn {
@@ -616,6 +617,7 @@ nav {
     width: 50%;
     text-align: center;
     margin: 1em auto 4em auto;
+    font-size: 1.5em;
   }
 
   .whole-program:hover {
@@ -675,6 +677,10 @@ nav {
     display: none;
   }
 
+  #partners {
+    margin-top: 2em;
+  }
+
   .desktop-partner {
     width: fit-content;
     margin: auto;
@@ -724,15 +730,15 @@ nav {
 
 @media screen and (min-width: 801px) and (max-width: 822px) {
   #headline {
-    height: 70vh;
+    height: 90vh;
   }
 
   #courses {
-    height: 50vh;
+    height: 70vh;
   }
 
   .courses-container {
-    height: 40vh;
+    height: 70vh;
   }
 
   .whole-program {
