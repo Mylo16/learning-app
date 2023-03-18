@@ -58,28 +58,44 @@ Clone this repository to your desired folder:
 -https://mylo16.github.io/
 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 👥 Author <a name="authors"></a>
 
 
 - GitHub: [@Mylo16](https://github.com/Mylo16)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - In the near future I will be adding the other sections like questions, videos, slides etc
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ⭐️ Show your support <a name="support"></a>
 
+
 If you like this project show your support by giving a ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Cindy Shin. The idea behind this project design was extracted from her design on 2015 CC global summit at beehance
 Secondly, would like to thank the entire microverse staff and students for such a wonderful coding camp
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
