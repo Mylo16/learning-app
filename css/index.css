@@ -93,7 +93,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
+  height: 110vh;
 }
 
 .headline-container {
@@ -516,7 +516,7 @@ nav {
     background-image: url('https://summit.cckorea.org/images/base/main_big.png');
     background-size: cover;
     background-position: 0% 3em;
-    height: 100vh;
+    height: 110vh;
   }
 
   .text-container {
@@ -711,7 +711,7 @@ nav {
 
 @media screen and (min-width: 768px) and (max-width: 770px) {
   #headline {
-    height: 70vh;
+    height: 80vh;
   }
 
   #courses {
@@ -730,7 +730,7 @@ nav {
 
 @media screen and (min-width: 801px) and (max-width: 822px) {
   #headline {
-    height: 90vh;
+    height: 100vh;
   }
 
   #courses {
@@ -840,7 +840,7 @@ nav {
     background-image: url('https://summit.cckorea.org/images/base/main_big.png');
     background-size: cover;
     background-position: 0% 3em;
-    height: 100vh;
+    height: 110vh;
   }
 
   .text-container {
