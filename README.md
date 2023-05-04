@@ -55,7 +55,7 @@ Clone this repository to your desired folder:
 
 ### Live Demo
 
--https://mylo16.github.io/
+-https://mylo16.github.io/learning-app/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
