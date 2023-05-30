@@ -232,7 +232,7 @@ nav {
 .card1 {
   height: 15em;
   position: relative;
-  background-image: url(/assets/card1.jpg);
+  background-image: url('../assets/card1.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 2em;
@@ -241,7 +241,7 @@ nav {
 .card2 {
   height: 15em;
   position: relative;
-  background-image: url(/assets/card2.jpg);
+  background-image: url('../assets/card2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 2em;

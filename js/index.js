@@ -10,7 +10,7 @@ const featureCol1 = document.getElementById('feature-col1');
 const featureCol2 = document.getElementById('feature-col2');
 
 hamburger.addEventListener('click', () => {
-  popupMenu.style.left = '0';
+  popupMenu.style.left = '0%';
   body.style.position = 'fixed';
 });
 
