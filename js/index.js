@@ -37,7 +37,18 @@ const featureCol2 = document.getElementById('feature-col2');
 
 featureData.map((data, index) => {
   if (index < 3) {
-    featureCol1.innerHTML += renderFeatures(data);
+    featureCol1.innerHTML +=  `
+      <div class="lecturer">
+          <div class="lecturer-col1"><img src="${data.image.img_src}" alt="${data.image.img_alt}" /></div>
+          <div class="lecturer-col2">
+              <p class="lecturer-name">${data.info.name}</p>
+              <div class="pos">
+              <p class="lecturer-position">${data.info.position}</p>
+              </div>
+              <p class="lecturer-work">${data.info.work}</p>
+          </div>
+      </div>
+    `;
   }
   else {
     featureCol2.innerHTML += renderFeatures(data);
