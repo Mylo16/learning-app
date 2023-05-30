@@ -6,8 +6,6 @@ const hamburger = document.getElementById('hamburger');
 const popupMenu = document.getElementById('popup-menu');
 const closeButton = document.getElementById('close-btn');
 const body = document.getElementById('body');
-const featureCol1 = document.getElementById('feature-col1');
-const featureCol2 = document.getElementById('feature-col2');
 
 hamburger.addEventListener('click', () => {
   popupMenu.style.left = '0%';
@@ -33,6 +31,9 @@ function renderFeatures(data) {
     </div>
     `;
 }
+
+const featureCol1 = document.getElementById('feature-col1');
+const featureCol2 = document.getElementById('feature-col2');
 
 featureData.map((data, index) => {
   if (index < 3) {
