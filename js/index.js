@@ -34,13 +34,14 @@ function renderFeatures(data) {
     `;
 }
 
-for (let i = 0; i < 3; i += 1) {
-  featureCol1.innerHTML += renderFeatures(featureData[i]);
-}
-
-for (let k = 3; k < 6; k += 1) {
-  featureCol2.innerHTML += renderFeatures(featureData[k]);
-}
+featureData.forEach((data, index) => {
+  if (index < 3) {
+    featureCol1.innerHTML += renderFeatures(data);
+  }
+  else {
+    featureCol2.innerHTML += renderFeatures(data);
+  }
+});
 
 function myFunction(pageWidth) {
   if (pageWidth.matches) {
