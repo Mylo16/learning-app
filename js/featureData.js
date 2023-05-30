@@ -1,7 +1,7 @@
 const featureData = [
   {
     image: {
-      img_src: '/assets/speaker_1.png',
+      img_src: '../assets/speaker_1.png',
       img_alt: 'lecturer',
     },
     info: {
@@ -12,7 +12,7 @@ const featureData = [
   },
   {
     image: {
-      img_src: '/assets/speaker_2.png',
+      img_src: '../assets/speaker_2.png',
       img_alt: 'lecturer',
     },
     info: {
@@ -23,7 +23,7 @@ const featureData = [
   },
   {
     image: {
-      img_src: '/assets/speaker_3.png',
+      img_src: '../assets/speaker_3.png',
       img_alt: 'lecturer',
     },
     info: {
@@ -34,7 +34,7 @@ const featureData = [
   },
   {
     image: {
-      img_src: '/assets/speaker_4.png',
+      img_src: '../assets/speaker_4.png',
       img_alt: 'lecturer',
     },
     info: {
@@ -45,7 +45,7 @@ const featureData = [
   },
   {
     image: {
-      img_src: '/assets/speaker_5.png',
+      img_src: '../assets/speaker_5.png',
       img_alt: 'lecturer',
     },
     info: {
@@ -56,7 +56,7 @@ const featureData = [
   },
   {
     image: {
-      img_src: '/assets/speaker_6.png',
+      img_src: '../assets/speaker_6.png',
       img_alt: 'lecturer',
     },
     info: {
