@@ -9,6 +9,7 @@ const body = document.getElementById('body');
 
 hamburger.addEventListener('click', () => {
   popupMenu.style.left = '0%';
+  console.log('happy');
   body.style.position = 'fixed';
 });
 
