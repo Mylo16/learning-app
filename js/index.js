@@ -22,7 +22,7 @@ closeButton.addEventListener('click', () => {
 function renderFeatures(data) {
   return `
     <div class="lecturer">
-        <div class="lecturer-col1"><img src="${data.image.img_src}" alt="${data.image.img_alt}"></div>
+        <div class="lecturer-col1"><img src="${data.image.img_src}" alt="${data.image.img_alt}" /></div>
         <div class="lecturer-col2">
             <p class="lecturer-name">${data.info.name}</p>
             <div class="pos">
