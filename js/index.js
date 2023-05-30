@@ -34,13 +34,14 @@ function renderFeatures(data) {
     `;
 }
 
-featureData.forEach((data, index) => {
+featureData.map((data, index) => {
   if (index < 3) {
     featureCol1.innerHTML += renderFeatures(data);
   }
   else {
     featureCol2.innerHTML += renderFeatures(data);
   }
+  return ('');
 });
 
 function myFunction(pageWidth) {
